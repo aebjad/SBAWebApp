@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        /*.item4 { grid-area: right; }*/
+        .item5 { grid-area: footer; }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item1">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                <a class="navbar-brand" href="#" >Charlotte Bookstore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#"> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Books
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Kids</a>
+                                <a class="dropdown-item" href="#">Teens</a>
+                                <a class="dropdown-item" href="#">Adult</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">All Books</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#"><i class="fas fa-user"></i> Account</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i> Bag</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+<!--        <div class="item4">Right</div>-->
+        <div class="item5">Footer</div>
+    </div>
+
+
+
+</body>
+</html>
